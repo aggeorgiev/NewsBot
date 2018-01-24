@@ -2,11 +2,7 @@ var chrono = require('chrono-node');
 var nlp = require('compromise')
 var NewsAPI = require('newsapi');
 
-var uuid = require('node-uuid'),
-    request = require('request');
-
 var NEWS_API_KEY = process.env.NEWS_API_KEY;
-
 var newsapi = new NewsAPI(NEWS_API_KEY);
 
 exports.getNews = function(text) {
